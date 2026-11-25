@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Next.js build & TypeScript incremental cache
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# Verification artifacts & local scratch
+eval-out/
+scratch/
+tmp/
+temp/
+*.tmp
+*.log
+logs/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+
+# IDE & OS
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini

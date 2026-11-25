@@ -6,6 +6,7 @@ __pycache__/
 
 # Next.js build & TypeScript incremental cache
 .next/
+.vercel/
 out/
 dist/
 build/
@@ -37,3 +38,6 @@ logs/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+.vercel
+.env*

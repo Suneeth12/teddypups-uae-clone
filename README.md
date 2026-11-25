@@ -8,10 +8,11 @@ A 1:1 frontend, typography, layout, and motion engineering clone of the real **[
 > - **Purpose:** This project is an independent frontend and interactive motion engineering clone created to replicate and study the design, responsive layout, variable typography, and scroll-choreographed SVG animations of [puppy.instabizweb.com](https://puppy.instabizweb.com/).
 > - **Rights:** All original brand identity, copy, photography, and video assets belong to their respective owners at TeddyPups U.A.E. (`https://puppy.instabizweb.com/`).
 
-## Live Deployment
+## Live Deployments
 
-- **GitHub Pages (Auto-deployed from `main`):** [https://suneeth12.github.io/teddypups-uae-clone/](https://suneeth12.github.io/teddypups-uae-clone/)
-- **Deploy on Vercel (Recommended for full Next.js AVIF/WebP optimization & security headers):**
+- **Vercel Production (Primary — Full AVIF/WebP + Security Headers):** [https://teddypups-uae-clone-seven.vercel.app/](https://teddypups-uae-clone-seven.vercel.app/)
+- **GitHub Pages (Static Mirror):** [https://suneeth12.github.io/teddypups-uae-clone/](https://suneeth12.github.io/teddypups-uae-clone/)
+- **Original Live Reference:** [https://puppy.instabizweb.com/](https://puppy.instabizweb.com/)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSuneeth12%2Fteddypups-uae-clone)
 

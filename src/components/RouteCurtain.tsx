@@ -146,6 +146,14 @@ export function curtainDown(): boolean {
   );
 }
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function stripBasePath(path: string): string {
+  if (!BASE_PATH) return path;
+  if (path === BASE_PATH || path === `${BASE_PATH}/`) return "/";
+  return path.startsWith(`${BASE_PATH}/`) ? path.slice(BASE_PATH.length) : path;
+}
+
 export default function RouteCurtain() {
   const router = useRouter();
   const pathname = usePathname();
@@ -202,7 +210,7 @@ export default function RouteCurtain() {
         addTimer(liftCurtain, 120);
         return;
       }
-      router.push(url.pathname + url.search + url.hash);
+      router.push(stripBasePath(url.pathname) + url.search + url.hash);
       addTimer(liftCurtain, 6000);
     };
 
@@ -230,7 +238,7 @@ export default function RouteCurtain() {
         e.preventDefault();
         e.stopPropagation();
         isKeyboardNav.current = e.detail === 0;
-        router.prefetch(dest.pathname + dest.search);
+        router.prefetch(stripBasePath(dest.pathname) + dest.search);
         window.dispatchEvent(new Event("tp:navigate"));
         targetUrlRef.current = dest.href;
 
